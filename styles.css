@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    margin-top: 1.3em;
+    margin-right: 4em;
+    word-spacing: 0.2em;
+    font-size: 1.15em;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-list a:hover{
+    text-decoration: underline;
+    color:#71ff97;
+}
+
+
+.logofoto{
+    height:170px;
+    padding:20px 50px;
+}
+
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #f8f9fa;
+}
+
+.mansh {
+    width: 70%;
+    height: 190px;
+    font-family: "Poppins", sans-serif;
+    font-size: 4.5em;
+    position: relative;
+    margin-top: 100px;
+    animation: slide-in 1.5s forwards ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 150px;
+        opacity: 1;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 450px;
+    height: min-content;
+    background-color: #fff3e4;
+}
+
+.content-title {
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    padding: 35px;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.content-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.imgframe{
+    height:19em;
+    padding: 30px;
+    background-image: url(images/sandwich1.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.imgframe:nth-child(3){
+    height:19em;
+    padding: 30px;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.imgframe:nth-child(5){
+    height:19em;
+    padding: 30px;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.imgframe:nth-child(7){
+    height:19em;
+    padding: 30px;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-images p{
+    font-family: "Poppins",sans-serif;
+}
+
+.content-images label{
+    font-family: "Great Vibes",cursive;
+    font-size: 3.2em;
+}
+
+.content-images a{
+    background-color: #ab762c;
+    border-radius: 15px;
+    padding:12px 10px;
+    text-decoration: none;
+    color:white;
+}
+.content-images button{
+    background-color: transparent;
+    border: none;
+    margin-top:26px;
+    font-family: "Poppins",sans-serif;
+    position: relative;
+    display:block;
+}
+
+.map-container {
+    padding:20px;
+    
+    text-align: left;
+    background-color: #fff3e4;
+}
+
+.map-container h3{
+    font-family: "Great Vibes",cursive;
+    font-size: 2.7em;
+    font-weight: 100;
+    text-align: center;
+    margin:35px;
+}
+
+
+.gridcontainer{
+    border:0.001px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin:2em;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(9\).jpg);
+    opacity: 1;
+}
+
+
+
+form{
+    outline: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:25px;
+}
+
+form input{
+    border-radius: 15px;
+    border:0.2px solid rgb(208, 208, 208);
+    height:45px;
+    font-family: "Poppins",sans-serif;
+}
+
+form textarea{
+    border-radius: 15px;
+    border:0.2px solid rgb(208, 208, 208);
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+    padding: 5px;
+    resize:none;
+}
+
+form button{
+    padding:20px 20px;
+    border:none;
+    background-color:#ab762c;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+
+
+.footer{
+    width:100%;
+    height:300px;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(6\).jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.footerimg{
+    display:block;
+    height:140px;
+    padding:20px 50px;
+}
+.footerlogo{
+width:50%;
+}
+
+.footernote{
+    font-size: 2em;
+    font-family: "Poppins",sans-serif;
+    width: 400px;
+    height:100px;
+    position: absolute;
+    text-align: end;
+    right:150px;
+    color:#fff3e4;
+    
+}
+
+.footernote label{
+    font-size: 15px;
+}
