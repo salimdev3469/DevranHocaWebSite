@@ -33,6 +33,8 @@
 }
 
 
+
+
 .logofoto{
     height:170px;
     padding:20px 50px;
@@ -49,13 +51,14 @@
 }
 
 .mansh {
-    width: 70%;
-    height: 190px;
+    width:80%;
+    height: 220px;
     font-family: "Poppins", sans-serif;
     font-size: 4.5em;
     position: relative;
     margin-top: 100px;
     animation: slide-in 1.5s forwards ease-in-out;
+    overflow:hidden;
 }
 
 @keyframes slide-in {
@@ -179,7 +182,10 @@
     opacity: 1;
 }
 
-
+iframe{
+    width: 100%;
+    height: -webkit-fill-available;
+}
 
 form{
     outline: none;
@@ -193,10 +199,12 @@ form input{
     border-radius: 15px;
     border:0.2px solid rgb(208, 208, 208);
     height:45px;
+    
     font-family: "Poppins",sans-serif;
 }
 
 form textarea{
+   
     border-radius: 15px;
     border:0.2px solid rgb(208, 208, 208);
     font-size: 15px;
@@ -216,37 +224,82 @@ form button{
 }
 
 
-
 .footer{
-    width:100%;
-    height:300px;
+    width: 100%;
+    height: 200px;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(6\).jpg);
     background-position: center;
     background-size: cover;
-    opacity: 1;
-}
-
-.footerimg{
-    display:block;
-    height:140px;
-    padding:20px 50px;
-}
-.footerlogo{
-width:50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footernote{
-    font-size: 2em;
-    font-family: "Poppins",sans-serif;
-    width: 400px;
-    height:100px;
-    position: absolute;
-    text-align: end;
-    right:150px;
+    font-size: 1.3em;
     color:#fff3e4;
-    
+    font-family: "Poppins",sans-serif;
+    width:40%;
+    margin:35px;
 }
 
 .footernote label{
+    position: relative;
     font-size: 15px;
+    right: -230px;
+    top: 40px;
+    
+}
+
+.footerlogo img{
+    width:180px;
+    margin:35px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:940px) {
+    .navbar-list{
+        display:none;
+    }
+    .footerlogo img{
+        width:180px;
+        margin:20px;
+    }
+
+    .mansh {
+        width: 70%;
+        height: 120px;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.4em;
+        position: relative;
+        margin-top: 100px;
+        animation: slide-in 1.6s forwards ease-in-out;
+        
+    }
+  
+}
+
+@media (max-width: 1280px) and (min-width: 940px){
+.mansh{
+    font-size: 2.5em;
+    width: 50%;
+}
+}
+
+@media (max-width:800px){
+    .mansh{
+        height:180px;
+    }
+}
+
+@media (max-width:600px){
+    .mansh{
+        height: 250px;
+    }
 }
