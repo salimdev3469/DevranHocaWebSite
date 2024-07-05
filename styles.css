@@ -233,7 +233,7 @@ form input {
     border-radius: 15px;
     border: 0.2px solid rgb(208, 208, 208);
     height: 45px;
-    width: 100%;
+    width: 93%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -244,6 +244,7 @@ form textarea {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     padding: 5px;
+    width: 93%;
     resize: none;
 }
 
@@ -254,6 +255,7 @@ form button {
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     border-radius: 15px;
+    width: 93%;
     cursor: pointer;
 }
 
