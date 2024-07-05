@@ -52,13 +52,14 @@
 
 .mansh {
     width:80%;
-    height: 220px;
+    height: auto;
     font-family: "Poppins", sans-serif;
-    font-size: 4.5em;
+    font-size: 2em;
     position: relative;
-    margin-top: 100px;
+    margin-top: 200px;
     animation: slide-in 1.5s forwards ease-in-out;
     overflow:hidden;
+    transform: translate(-90px, -100px);
 }
 
 @keyframes slide-in {
@@ -133,6 +134,26 @@
     font-family: "Poppins",sans-serif;
 }
 
+.devaminioku {
+    display: none;
+}
+.read-more-btn {
+    
+    background-color: transparent;
+    color: rgb(217, 44, 44);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    display:inline;
+    cursor: pointer;
+}
+.contentparag.show-more .devaminioku {
+    display: inline;
+}
+.contentparag.show-more .dots {
+    display: none;
+}
+
 .content-images label{
     font-family: "Great Vibes",cursive;
     font-size: 3.2em;
@@ -145,10 +166,10 @@
     text-decoration: none;
     color:white;
 }
-.content-images button{
+.dahafazlasi{
     background-color: transparent;
     border: none;
-    margin-top:26px;
+    margin-top:20px;
     font-family: "Poppins",sans-serif;
     position: relative;
     display:block;
@@ -272,34 +293,14 @@ form button{
         margin:20px;
     }
 
-    .mansh {
-        width: 70%;
-        height: 120px;
-        font-family: "Poppins", sans-serif;
-        font-size: 2.4em;
-        position: relative;
-        margin-top: 100px;
-        animation: slide-in 1.6s forwards ease-in-out;
-        
-    }
   
 }
 
-@media (max-width: 1280px) and (min-width: 940px){
-.mansh{
-    font-size: 2.5em;
-    width: 50%;
-}
-}
 
-@media (max-width:800px){
-    .mansh{
-        height:180px;
-    }
-}
 
-@media (max-width:600px){
-    .mansh{
-        height: 250px;
-    }
-}
+
+
+
+
+
+
