@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
 .navbar {
@@ -15,6 +13,7 @@
 }
 
 .navbar-list {
+
     margin-top: 1.3em;
     margin-right: 4em;
     word-spacing: 0.2em;
@@ -27,17 +26,19 @@
     color: rgb(255, 255, 255);
 }
 
-.navbar-list a:hover{
+.navbar-list a:hover {
     text-decoration: underline;
-    color:#71ff97;
+    color: #71ff97;
+}
+
+.navbar-logo{
+    width:40%;
 }
 
 
-
-
-.logofoto{
-    height:170px;
-    padding:20px 50px;
+.logofoto {
+    height: 170px;
+    padding: 20px 50px;
 }
 
 
@@ -51,14 +52,14 @@
 }
 
 .mansh {
-    width:80%;
+    width: 80%;
     height: auto;
     font-family: "Poppins", sans-serif;
     font-size: 2em;
     position: relative;
     margin-top: 200px;
     animation: slide-in 1.5s forwards ease-in-out;
-    overflow:hidden;
+    overflow: hidden;
     transform: translate(-90px, -100px);
 }
 
@@ -93,160 +94,171 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 45px;
-    padding:15px;
+    padding: 15px;
 }
 
-.imgframe{
-    height:19em;
+.imgframe {
+    height: 19em;
     padding: 30px;
     background-image: url(images/sandwich1.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
+    margin-top: 20px;
 }
 
-.imgframe:nth-child(3){
-    height:19em;
+.imgframe:nth-child(3) {
+    height: 19em;
     padding: 30px;
     background-image: url(images/wallpaperflare.com_wallpaper.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
+    margin-top: 20px;
 }
-.imgframe:nth-child(5){
-    height:19em;
+
+.imgframe:nth-child(5) {
+    height: 19em;
     padding: 30px;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(3\).jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
+    margin-top: 20px;
 }
 
-.imgframe:nth-child(7){
-    height:19em;
+.imgframe:nth-child(7) {
+    height: 19em;
     padding: 30px;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
+    margin-top: 20px;
 }
 
-.content-images p{
-    font-family: "Poppins",sans-serif;
+.content-images p {
+    font-family: "Poppins", sans-serif;
 }
 
 .devaminioku {
     display: none;
 }
+
 .read-more-btn {
-    
+
     background-color: transparent;
     color: rgb(217, 44, 44);
     border: none;
     outline: none;
     font-size: 18px;
-    display:inline;
+    display: inline;
     cursor: pointer;
 }
+
 .contentparag.show-more .devaminioku {
     display: inline;
 }
+
 .contentparag.show-more .dots {
     display: none;
 }
 
-.content-images label{
-    font-family: "Great Vibes",cursive;
+.content-images label {
+    font-family: "Great Vibes", cursive;
     font-size: 3.2em;
 }
 
-.content-images a{
+.content-images a {
     background-color: #ab762c;
     border-radius: 15px;
-    padding:12px 10px;
+    padding: 12px 10px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.dahafazlasi{
+
+.dahafazlasi {
     background-color: transparent;
     border: none;
-    margin-top:20px;
-    font-family: "Poppins",sans-serif;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
     position: relative;
-    display:block;
+    display: block;
 }
 
 .map-container {
-    padding:20px;
-    
+    padding: 20px;
+
     text-align: left;
     background-color: #fff3e4;
 }
 
-.map-container h3{
-    font-family: "Great Vibes",cursive;
+.map-container h3 {
+    font-family: "Great Vibes", cursive;
     font-size: 2.7em;
     font-weight: 100;
     text-align: center;
-    margin:35px;
+    margin: 35px;
 }
 
 
-.gridcontainer{
-    border:0.001px solid rgb(208, 208, 208);
+.gridcontainer {
+    height:100%;
+    width:auto;
+    border: 0.001px solid rgb(208, 208, 208);
     border-radius: 10px;
-    padding:20px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin:2em;
+    margin: 2em;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(9\).jpg);
     opacity: 1;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: -webkit-fill-available;
 }
 
-form{
+form {
     outline: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 
-form input{
+form input {
     border-radius: 15px;
-    border:0.2px solid rgb(208, 208, 208);
-    height:45px;
+    border: 0.2px solid rgb(208, 208, 208);
+    height: 45px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+form textarea {
     width: auto;
-    font-family: "Poppins",sans-serif;
-}
-
-form textarea{
-   
     border-radius: 15px;
-    border:0.2px solid rgb(208, 208, 208);
+    border: 0.2px solid rgb(208, 208, 208);
     font-size: 15px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 5px;
-    resize:none;
+    resize: none;
 }
 
-form button{
-    padding:20px 20px;
-    border:none;
-    background-color:#ab762c;
+form button {
+    padding: 20px 20px;
+    border: none;
+    background-color: #ab762c;
     font-size: 25px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 15px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
-.footer{
+.footer {
     width: 100%;
     height: 200px;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(6\).jpg);
@@ -256,20 +268,20 @@ form button{
     justify-content: space-between;
 }
 
-.footernote{
+.footernote {
     font-size: 1.3em;
-    color:#fff3e4;
-    font-family: "Poppins",sans-serif;
-    width:40%;
-    margin:30px;
+    color: #fff3e4;
+    font-family: "Poppins", sans-serif;
+    width: 40%;
+    margin: 30px;
 }
 
-.footernote label{
+.footernote label {
     position: relative;
     font-size: 15px;
     right: -230px;
     top: 40px;
-    
+
 }
 
 
@@ -279,38 +291,31 @@ form button{
     margin: 18px;
 }
 
-@media (max-width:940px){
+@media (max-width:940px) {
 
-    .navbar-list{
-        display:none;
+    .navbar-list {
+        display: none;
     }
 
-    .footerlogo img{
-        width:150px;
-        margin:15px;
+    .footerlogo img {
+        width: 150px;
+        margin: 15px;
     }
 
-    .footernote{
-        margin:20px;
+    .footernote {
+        margin: 20px;
         font-size: 1em;
     }
 }
 
 
-@media (max-width:768px){
 
-    .navbar-list{
+
+
+
+@media (max-width:400px){
+    iframe{
         display:none;
-    }
-
-    .footerlogo img{
-        width:120px;
-        margin:13px;
-    }
-
-    .footernote{
-        margin:20px;
-        font-size: 1.2em;
     }
 }
 
@@ -319,8 +324,33 @@ form button{
 
 
 
+@media (max-width:768px) {
+
+    .mansh {
+        width: 80%;
+       height: auto;
+       font-size:1.22em;
+    }
+   
+
+    .content-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px; /* İsteğe bağlı olarak hücreler arasındaki boşluk */
+    }
 
 
+    .navbar-list {
+        display: none;
+    }
 
+    .footerlogo img {
+        width: 120px;
+        margin: 13px;
+    }
 
-
+    .footernote {
+        margin: 20px;
+        font-size: 1.2em;
+    }
+}
