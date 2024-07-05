@@ -41,7 +41,6 @@
     padding: 20px 50px;
 }
 
-
 .header {
     width: 100vw;
     height: 100vh;
@@ -286,8 +285,6 @@ form button {
 
 }
 
-
-
 .footerlogo img {
     width: 180px;
     margin: 18px;
@@ -311,20 +308,11 @@ form button {
 }
 
 
-
-
-
-
 @media (max-width:400px){
     iframe{
         display:none;
     }
 }
-
-
-
-
-
 
 @media (max-width:768px) {
 
