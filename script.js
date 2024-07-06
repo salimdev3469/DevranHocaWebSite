@@ -21,3 +21,35 @@ readMoreBtns.forEach((btn, index) => {
     });
 });
 
+
+
+//Collapse Button
+document.addEventListener("DOMContentLoaded", function() {
+    let ikona = document.querySelector(".fa-sharp");
+    let sideColumn = document.querySelector(".sideColumn");
+    let closeBtn = document.querySelector(".close-btn");
+    let manshit=document.querySelector(".mansh");
+
+    ikona.addEventListener("click", function() {
+        // Hide the icon
+        ikona.style.display = "none";
+
+        manshit.style.display = "none";
+        
+
+        // Show the side column
+        sideColumn.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", function() {
+        // Show the icon
+        ikona.style.display = "block";
+
+        manshit.style.display = "block";
+
+        // Hide the side column
+        sideColumn.style.display = "none";
+    });
+});
+
+

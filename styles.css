@@ -12,6 +12,10 @@
     justify-content: space-between;
 }
 
+.navbar i{
+    display:none;
+}
+
 .navbar-list {
 
     margin-top: 1.3em;
@@ -19,6 +23,58 @@
     word-spacing: 0.2em;
     font-size: 1.15em;
 }
+
+.sideColumn{
+    height:100vh;
+    width:30%;
+    background-color: #ffe070;
+    position: absolute;
+    right: 0px;
+    display: none;
+    animation: sideColSlide .8s ease-in-out;
+    opacity:0.85;
+}
+
+
+.sideColumn li{
+    display: grid;
+    justify-items: center;
+    line-height: 5;
+    
+}
+
+.sideColumn li a{
+  font-family: "Great Vibes",sans-serif;
+  font-size: 1.8em;
+  box-shadow: #939393;
+  text-decoration: none;
+  color:black;
+}
+
+@keyframes sideColSlide{
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+
+}
+
+.close-btn {
+    display:none;
+    margin-top: 20px;
+    margin-left:15px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 .navbar-list a {
     text-decoration: none;
@@ -296,6 +352,22 @@ form button {
         display: none;
     }
 
+    .navbar i{
+        display:block;
+        cursor: pointer;
+        margin-top: 2em;
+        position: relative;
+        right: 2em;
+    }
+
+    .sideColumn{
+        height:100vh;
+        width:30%;
+        background-color: #ffd76a;
+        position: absolute;
+        right: 0px;
+    }
+
     .footerlogo img {
         width: 150px;
         margin: 15px;
@@ -314,6 +386,16 @@ form button {
     }
     .formpage{
         width:250px;
+    }
+
+    .logofoto{
+        height:135px;
+    }
+
+    .sideColumn{
+        
+        width:40%;
+       
     }
 }
 
