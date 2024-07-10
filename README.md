@@ -1,2 +1,0 @@
-# DevranHocaWebSite
-Static

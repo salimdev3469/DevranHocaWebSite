@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevHoc-Anasayfa</title>
+    <title>Cafe Marie</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+QLD:wght@100..400&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 </head>
 
 
@@ -28,9 +28,9 @@
     <div class="sideColumn"><i class="close-btn fa-solid fa-xmark" style="color: #ff0000;">
     </i>
     <li>
-        <a href="#">Anasayfa</a>
+        <a href="index.php">Anasayfa</a>
         <a href="#">Hakkımızda</a>
-        <a href="#">Menü</a>
+        <a href="menu.html">Menü</a>
         <a href="#">Sipariş</a>
         <a href="#">İletişim</a>
     </li></div>
@@ -43,9 +43,9 @@
             </div>
             <div class="navbar-list">
                 <li>
-                    <a href="#">Anasayfa</a>
+                    <a href="index.php">Anasayfa</a>
                     <a href="#">Hakkımızda</a>
-                    <a href="#">Menü</a>
+                    <a href="menu.html">Menü</a>
                     <a href="#">Sipariş</a>
                     <a href="#">İletişim</a>
                 </li>
@@ -124,28 +124,63 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="formpage">
-                <form>
+                <form action="index.php" method="post">
                     <input type="text" name="name" placeholder="  Ad-Soyad" required>
+                    <input type="text" name="phone" placeholder="  Telefon" required>
                     <input type="email" name="email" placeholder="  E-Posta" required>
                     <input type="text" name="subject" placeholder="  Konu" required>
                     <textarea rows="8" name="message" placeholder=" Mesaj" required></textarea>
-                    <button type="submit" class=>Gönder</button>
+                    <button type="submit"  class=>Gönder</button>
                 </form>
             </div>
         </div>
     </div>
 
 
-    <div class="footer">
+    <!---<div class="footer">
         <div class="footerlogo"><img src="images/coffee-yall-chin-high-resolution-logo-transparent.png" alt="" decoding="async"></div>
         <div class="footernote">
             <p>"Bir kahve alıp yürüsek uzaklara, ne yol bitse ne de kahvemiz..."
             </p>
 
+        </div>!-->
+
+
+        <div class="footer">
+        <div class="footerlogo"><img src="images/coffee-yall-chin-high-resolution-logo-transparent.png" alt="" decoding="async"></div>
+        <div class="footernote">
+            <p>"Bir kahve alıp yürüsek uzaklara, ne yol bitse ne de kahvemiz..."
+            </p>
         </div>
+        <div class="allrr"><label>Tüm Hakları Saklıdır.</label></div>
+        <div class="address"><h5>Ödeme ve Teslimat</h5>Burada adres ödeme yöntemi ve teslimat şekli görüntülenecektir.</div>
+    </div>
 
     </div>
     <script src="script.js"></script>
 </body>
 
 </html>
+
+<?php
+include("baglanti.php"); //php sayfasini bağladik
+
+if(isset($_POST["name"],$_POST["phone"],$_POST["email"],$_POST["subject"],$_POST["message"])) //Eger tüm form bosluklari doluysa asagidaki işlemleri gerçekleştir
+{
+   $adsoyad= $_POST["name"]; //Kolay kullanım açısından verileri degiskenlere atadik
+   $telefon=$_POST["phone"];
+   $email=$_POST["email"];
+   $konu=$_POST["subject"];
+   $mesaj=$_POST["message"];
+
+   $ekle="INSERT INTO iletisim (adsoyad, telefon, email, konu, mesaj) VALUES ('".$adsoyad."','".$telefon."','".$email."','".$konu."','".$mesaj."')";
+   
+   if($baglan->query($ekle)===TRUE){
+    echo "<script>alert('Mesajınız Gönderilmiştir.')</script>";
+
+   }
+   else{
+    echo "<script>alert('Mesajınız Gönderilemedi.')</script>";
+   }
+}
+?>
