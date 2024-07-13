@@ -243,7 +243,7 @@
     display: block;
 }
 
-.map-container {
+/*.map-container {
     padding: 20px;
 
     text-align: left;
@@ -314,7 +314,7 @@ form button {
     border-radius: 15px;
     width: 93%;
     cursor: pointer;
-}
+}*/
 
 
 .footer {
@@ -384,16 +384,11 @@ form button {
 
 
 @media (max-width:400px) {
-    iframe {
-        display: none;
-    }
-
-    .formpage {
-        width: 250px;
-    }
+  
+   
 
     .logofoto {
-        height: 135px;
+        height: 100px;
     }
 
     .sideColumn {
@@ -653,6 +648,13 @@ form button {
     }
 }
 
+@media (max-width:530px){
+    .logofotomenu{
+        height:95px;
+        padding: 30px;
+    }
+}
+
 @media (max-width:515px) {
     .footer {
         font-size: 13px;
@@ -669,7 +671,7 @@ form button {
     .betnavbar i {
         color: #FFE070;
         display: block;
-    }
+    } 
 
 }
 
@@ -700,11 +702,7 @@ form button {
         grid-template-rows: repeat(12, 1fr);
     }
 
-    .logofotomenu {
-        height: 100px;
-        margin-bottom: 55px;
-        padding: 18px 25px;
-    }
+  
 
     .betnavbar i {
         color: #FFE070;
@@ -712,9 +710,16 @@ form button {
     }
 }
 
-@media (max-width:310px) {
+
+@media (max-width:320px) {
     .betnavbar i {
         padding: 8px;
+    }
+}
+
+@media (max-width:485px){
+    .logofoto{
+        height: 95px;
     }
 }
 
@@ -754,7 +759,7 @@ form button {
     font-size: 36px;
 }
 
-.iletisimpaneli {
+/*.iletisimpaneli {
     height: 100vh;
     background-image: url("images/iletback.jpg");
     background-position: center;
@@ -790,11 +795,105 @@ form button {
     height: auto;
     background-color: #ab762c;
 
+}*/
+
+.iletisimpaneli {
+    padding: 35px;
+    background-color: #f4f4f4; 
+    
+}
+
+.iletisimfirst {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.iletisimharita iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.iletisimform {
+    width: 100%;
+    max-width: 600px;
+}
+
+.iletisimform form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iletisimform input, .iletisimform textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+}
+
+.iletisimform button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ab762c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins",sans-serif;
+}
+
+.iletisimform button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive stiller */
+@media (max-width: 1200px) {
+    .iletisimfirst {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iletisimharita iframe, .iletisimform {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .iletisimform input, .iletisimform textarea {
+        font-size: 14px;
+    }
+
+    .iletisimform button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iletisimform input, .iletisimform textarea {
+        font-size: 12px;
+    }
+
+    .iletisimform button {
+        font-size: 14px;
+    }
 }
 
 .sipariscontent {
-    height: 100vh;
+    height: 85vh;
     background-color: #f1f1f1;
+}
+
+@media (max-width:350px){
+    .sipariscontent{
+        height:100vh;
+    }
 }
 
 .flexsiparis {
@@ -855,12 +954,9 @@ a.whatsapp2 i {
     margin: 60px;
 }
 
-
-
 .wp3{
     font-size: 4.2em;
     padding: 40px;
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -870,7 +966,7 @@ a.whatsapp2 i {
     display: contents;
 }
 
-@media (max-width: 768px) and (min-width:481px) {
+@media (max-width: 780px) and (min-width:481px) {
     a.whatsapp2 i {
         font-size: 175px !important;
     }
