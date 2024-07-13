@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-.navbar i{
+.navbar i {
     display: none;
 }
 
@@ -39,12 +39,12 @@
 .sideColumn li {
     display: grid;
     justify-items: center;
-    line-height: 5;
+    line-height: 3.5;
 
 }
 
 .sideColumn li a {
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.8em;
     box-shadow: #939393;
     text-decoration: none;
@@ -98,7 +98,7 @@
 }
 
 .header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(images/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
@@ -155,7 +155,7 @@
 .imgframe {
     height: 19em;
     padding: 30px;
-    background-image: url(images/sandwich1.jpeg);
+    background-image: url(images/kahvaltitabagi.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -165,7 +165,7 @@
 .imgframe:nth-child(3) {
     height: 19em;
     padding: 30px;
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(10\).jpg);
+    background-image: url(images/burger.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -175,14 +175,15 @@
 .imgframe:nth-child(5) {
     height: 19em;
     padding: 30px;
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-image: url(images/meyve-caylari-409099-1200x800.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     margin-top: 20px;
 }
 
-.imgframe:nth-child(7) {
+
+/*.imgframe:nth-child(7) {
     height: 19em;
     padding: 30px;
     background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
@@ -190,8 +191,7 @@
     background-size: cover;
     text-align: center;
     margin-top: 20px;
-}
-
+}*/
 
 
 .devaminioku {
@@ -320,12 +320,12 @@ form button {
 .footer {
     width: 100%;
     height: 270px;
-    background-image: url("images/footer.jpg");
+    background-image: url("images/footerflare.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    padding:5px;
+    padding: 5px;
 }
 
 .footernote {
@@ -355,7 +355,7 @@ form button {
         display: none;
     }
 
-    .navbar i{
+    .navbar i {
         display: block;
         cursor: pointer;
         margin-top: 2em;
@@ -439,7 +439,7 @@ form button {
 
 /******************************************MENU PAGE***************************************/
 .betnavbar {
-    background-color:transparent;
+    background-color: transparent;
     height: 100px;
     padding: 15px;
 }
@@ -463,7 +463,7 @@ form button {
 }
 
 .navigates a {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
@@ -473,33 +473,33 @@ form button {
     color: #71ff97;
 }
 
-.betnavbar i{
-    color:#FFE070;
-    display:none;
+.betnavbar i {
+    color: #FFE070;
+    display: none;
     float: right;
     padding: 25px;
 }
 
-.betmanshat{
-    height:400px;
-    background-image: url("images/wallpaperflare.com_wallpaper\ \(10\).jpg");
+.betmanshat {
+    height: 400px;
+    background-image: url("images/bannerflare.jpg");
     text-align: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     background-position: center;
     background-size: cover;
 }
 
 
-.manshit{
+.manshit {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: auto;
     flex-direction: column;
     position: relative;
     animation: slide .9s forwards ease-in-out;
 }
-    
-.manshit h1{
+
+.manshit h1 {
     font-family: "Great Vibes", cursive;
     font-size: 9em;
     font-weight: 300;
@@ -518,14 +518,15 @@ form button {
     }
 }
 
-.urunler{
+.urunler {
+    padding-top: 35px;
     height: 100%;
-    padding:35px;
+    padding: 35px;
     background-color: #fff3e4;
 }
 
 .grid-container {
-    margin-top:25px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -539,9 +540,9 @@ form button {
     font-size: 24px;
 }
 
-.menufotoitem{
+.menufotoitem {
     border-radius: 10px;
-    box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
     height: auto;
     padding: 0px;
     background-position: center;
@@ -550,131 +551,169 @@ form button {
     max-width: 100%;
 }
 
-.menufotoitem:hover{
+.menufotoitem:hover {
     transform: scale(1.1);
 }
 
-.menuitemaciklama{
-    font-family:"Great Vibes",cursive;
+.menuitemaciklama {
+    font-family: "Great Vibes", cursive;
     font-weight: 600;
     font-size: 45px;
 }
 
-.menuitemfiyat{
-    font-family: "Poppins",sans-serif;
+.menuitemfiyat {
+    font-family: "Poppins", sans-serif;
 }
 
 
 
 .allrr {
-    width: 100%; /* Konteynerin genişliğini %100 yapar */
-    text-align: right; /* Yazıyı ortalar */
-    padding: 10px; /* İç boşluk ekler */
-    box-sizing: border-box; /* Padding ve border genişliğe dahil edilir */
-    background-color: transparent; /* Arkaplan rengi (isteğe bağlı) */
-    display: flex; /* Flexbox kullan */
-    flex-direction: column; /* Dikey yönde hizala */
-    justify-content: flex-end; /* Alt tarafa hizala */
-    height: auto; /* Tam sayfa yüksekliği (isteğe bağlı) */ 
+    width: 100%;
+    /* Konteynerin genişliğini %100 yapar */
+    text-align: right;
+    /* Yazıyı ortalar */
+    padding: 10px;
+    /* İç boşluk ekler */
+    box-sizing: border-box;
+    /* Padding ve border genişliğe dahil edilir */
+    background-color: transparent;
+    /* Arkaplan rengi (isteğe bağlı) */
+    display: flex;
+    /* Flexbox kullan */
+    flex-direction: column;
+    /* Dikey yönde hizala */
+    justify-content: flex-end;
+    /* Alt tarafa hizala */
+    height: auto;
+    /* Tam sayfa yüksekliği (isteğe bağlı) */
 }
 
 .allrr label {
-    font-size: .7rem; /* Yazı boyutunu ayarlar */
-    word-wrap: break-word; /* Uzun kelimelerin taşmasını engeller */
-    color:white;
-    font-family: "Poppins",sans-serif;
+    font-size: .7rem;
+    /* Yazı boyutunu ayarlar */
+    word-wrap: break-word;
+    /* Uzun kelimelerin taşmasını engeller */
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
-.address{
-    font-family: "Poppins",sans-serif;
+.address {
+    font-family: "Poppins", sans-serif;
     color: white;
-    display: flex; /* Flexbox kullan */
-    flex-direction: column; /* Dikey yönde hizala */
+    display: flex;
+    /* Flexbox kullan */
+    flex-direction: column;
+    /* Dikey yönde hizala */
     justify-content: space-between;
 }
 
 
-.odemeteslimat{
-    padding-top:30px;
+.odemeteslimat {
+    padding-top: 30px;
 }
 
 @media (max-width:865px) {
-.navigates{
-    display:none;
-}
-
-.manshit h1{
-    font-size: 5em;
-}
-.menuitemaciklama{
-    font-size: 19px;
-}
-.grid-item{
-    font-size: 19px;
-}
-.grid-container{
-    padding:0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
-.betnavbar i{
-    color:#FFE070;
-    display:block;
-}
-}
-
-@media (max-width:515px){
-.footer{
-    font-size:13px;
-}
-.address{
-    font-size: 10px;
-}
-.allrr label {
-    font-size: 7px;
-}
-.betnavbar i{
-    color:#FFE070;
-    display:block;
-}
-
-}
-
-@media (max-width:376px){
-    .footer{
-        font-size:10px;
-    }
-    .address{
-        font-size: 7px;
-    }
-    .allrr label {
-        font-size: 4px;
-    }
-    .footernote{
-        font-size:8px;
+    .navigates {
+        display: none;
     }
 
-    .footerlogo img{
-        width:85px;
+    .manshit h1 {
+        font-size: 5em;
     }
-    .grid-container{
-        padding:0;
+
+    .menuitemaciklama {
+        font-size: 19px;
+    }
+
+    .grid-item {
+        font-size: 19px;
+    }
+
+    .grid-container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .betnavbar i {
+        color: #FFE070;
+        display: block;
+    }
+}
+
+@media (max-width:740px){
+    .grid-container {
+        padding: 0;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
     }
-    .logofotomenu{
-        height: 100px;
-        margin-bottom: 55px;
-        padding:18px 25px;
-    }
-    .betnavbar i{
-        color:#FFE070;
-        display:block;
+
+    .menuitemaciklama{
+        font-size: 29px;
     }
 }
 
-@media (max-width:310px){
-    .betnavbar i{
+@media (max-width:515px) {
+    .footer {
+        font-size: 13px;
+    }
+
+    .address {
+        font-size: 10px;
+    }
+
+    .allrr label {
+        font-size: 7px;
+    }
+
+    .betnavbar i {
+        color: #FFE070;
+        display: block;
+    }
+
+}
+
+@media (max-width:376px) {
+    .footer {
+        font-size: 10px;
+    }
+
+    .address {
+        font-size: 7px;
+    }
+
+    .allrr label {
+        font-size: 4px;
+    }
+
+    .footernote {
+        font-size: 8px;
+    }
+
+    .footerlogo img {
+        width: 85px;
+    }
+
+    .grid-container {
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .logofotomenu {
+        height: 100px;
+        margin-bottom: 55px;
+        padding: 18px 25px;
+    }
+
+    .betnavbar i {
+        color: #FFE070;
+        display: block;
+    }
+}
+
+@media (max-width:310px) {
+    .betnavbar i {
         padding: 8px;
     }
 }
@@ -698,7 +737,7 @@ form button {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(0, 0, 0);
     display: block;
     transition: 0.3s;
@@ -715,6 +754,228 @@ form button {
     font-size: 36px;
 }
 
+.iletisimpaneli {
+    height: 100vh;
+    background-image: url("images/iletback.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.iletisimfirst {
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 8px;
+    width: 50%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.iletisimform {
+
+    width: 50%;
+    height: auto;
+    margin-left: 15px;
+}
+
+.iletisimharita {
+    width: 50%;
+    height: auto;
+    background-color: #ab762c;
+
+}
+
+.sipariscontent {
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.flexsiparis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
 
 
 
+a.whatsapp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+
+a.whatsapp2 {
+
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+a.whatsapp2 i {
+    font-size: 300px !important;
+}
+
+.wp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp2{
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+
+
+.wp3{
+    font-size: 4.2em;
+    padding: 40px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp3 strong{
+    display: contents;
+}
+
+@media (max-width: 768px) and (min-width:481px) {
+    a.whatsapp2 i {
+        font-size: 175px !important;
+    }
+    a.whatsapp2{
+        width:220px;
+        height:220px;
+    }
+
+    .wp2 {
+        font-size: 35px;
+        margin:0;
+    }
+
+    .wp3 {
+        font-size: 40px;
+    }
+    .flexsiparis{
+        flex-direction: column-reverse;
+    }
+    }
+
+@media (max-width: 480px) {
+    a.whatsapp2 i {
+        font-size: 125px !important;
+    }
+    a.whatsapp2{
+        width:180px;
+        height:180px;
+    }
+
+    .wp2 {
+        font-size: 35px;
+        margin:0;
+    }
+
+    .wp3 {
+        font-size: 27px;
+    }
+    .flexsiparis{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 900px) and (min-width:781px) {
+    a.whatsapp2 i {
+        font-size: 145px !important;
+    }
+    a.whatsapp2{
+        width:200px;
+        height:200px;
+    }
+
+    .wp2 {
+        font-size: 50px;
+        margin:0;
+    }
+
+    .wp3 {
+        font-size: 35px;
+    }
+    .flexsiparis{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1050px)and (min-width:901px) {
+    a.whatsapp2 i {
+        font-size: 145px !important;
+    }
+    a.whatsapp2{
+        width:210px;
+        height:210px;
+    }
+
+    .wp2 {
+        font-size: 45px;
+        margin:0;
+    }
+
+    .wp3 {
+        font-size: 40px;
+    }
+    .flexsiparis{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1350px) and (min-width:1051px) {
+    a.whatsapp2 i {
+        font-size: 155px !important;
+    }
+    a.whatsapp2{
+        width:220px;
+        height:220px;
+    }
+
+    .wp2 {
+        font-size: 55px;
+        margin:0;
+    }
+
+    .wp3 {
+        font-size: 55px;
+    }
+    .flexsiparis{
+        flex-direction: column-reverse;
+    }
+}

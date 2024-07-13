@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Cafe Marie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-T4JZ3fGbjLlgywu2W0rqlRm5zln9DcAMuPyezfMX3ltt6nGrQFJH7HtYxS5QJpOMNsqBbzrYJIMM0iMCH8bXQQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   
+
+
+    <section class="betmanshat">
+        <section class="betnavbar">
+            <div class="betlogo"><a href="#" class="logolink"><img
+                        src="images/mari-cafe-high-resolution-logo-transparent.png" alt=""
+                        class="logofotomenu" decoding="async"></a></div>
+            <div class="navigates">
+                <li>
+                    <a href="index.html">Anasayfa</a>
+                    <a href="menu.html">Menü</a>
+                    <a href="siparis.html">Sipariş</a>
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+            </div>
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </section>
+        <div class="manshit">
+            <h1>İletişim</h1>
+        </div>
+    </section>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtnn" id="close-btnn">&times;</a>
+        <a href="index.php">Anasayfa</a>
+        <a href="menu.html">Menü</a>
+        <a href="siparis.html">Sipariş</a>
+        <a href="iletisim.php">İletişim</a>
+    </div>
+
+    <section class="iletisimpaneli">
+        <div class="iletisimfirst">
+            <div class="iletisimharita"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12033.007316064304!2d28.952997656841383!3d41.06348767027833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab72fe1bba27d%3A0xa4721b9b3af51e6e!2zVGFsYXRwYcWfYSwgMzQ0MDAgS8OixJ_EsXRoYW5lL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1720096222273!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="iletisimform">
+                <form action="index.php" method="post">
+                    <input type="text" name="name" placeholder="  Ad-Soyad" required>
+                    <input type="text" name="phone" placeholder="  Telefon" required>
+                    <input type="email" name="email" placeholder="  E-Posta" required>
+                    <input type="text" name="subject" placeholder="  Konu" required>
+                    <textarea rows="8" name="message" placeholder=" Mesaj" required></textarea>
+                    <button type="submit"  class=>Gönder</button>
+                </form>
+          
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footerlogo"><img src="images/mari-cafe-high-resolution-logo-transparent.png" alt=""
+                decoding="async"></div>
+        <div class="footernote">
+            <p>"Bir kahve alıp yürüsek uzaklara, ne yol bitse ne de kahvemiz..."
+            </p>
+        </div>
+        <div class="address">
+            <div class="odemeteslimat">
+                <h5>Ödeme ve Teslimat</h5>Burada adres, ödeme yöntemi ve teslimat şekli görüntülenecektir.
+            </div>
+            <div class="allrr"><label>Tüm Hakları Saklıdır.</label></div>
+        </div>
+
+    </div>
+    <a href="https://wa.me/905461275860" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp" style="color: #ffffff;
+    font-size: 85px;"></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!--<?php
+include("baglanti.php"); //php sayfasini bağladik
+
+if(isset($_POST["name"],$_POST["phone"],$_POST["email"],$_POST["subject"],$_POST["message"])) //Eger tüm form bosluklari doluysa asagidaki işlemleri gerçekleştir
+{
+   $adsoyad= $_POST["name"]; //Kolay kullanım açısından verileri degiskenlere atadik
+   $telefon=$_POST["phone"];
+   $email=$_POST["email"];
+   $konu=$_POST["subject"];
+   $mesaj=$_POST["message"];
+
+   $ekle="INSERT INTO iletisim (adsoyad, telefon, email, konu, mesaj) VALUES ('".$adsoyad."','".$telefon."','".$email."','".$konu."','".$mesaj."')";
+   
+   if($baglan->query($ekle)===TRUE){
+    echo "<script>alert('Mesajınız Gönderilmiştir.')</script>";
+
+   }
+   else{
+    echo "<script>alert('Mesajınız Gönderilemedi.')</script>";
+   }
+}
+?>--->
+
