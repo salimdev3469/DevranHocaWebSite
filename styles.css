@@ -14,6 +14,7 @@
 
 .navbar i {
     display: none;
+    color:#ffe070;
 }
 
 .navbar-list {
@@ -361,6 +362,7 @@ form button {
         margin-top: 2em;
         position: relative;
         right: 2em;
+        color:#ffe070;
     }
 
     .sideColumn {
@@ -723,7 +725,11 @@ form button {
     }
 }
 
-
+@media (max-width:380px){
+    .content-title{
+        font-size: 3.3em;
+    }
+}
 /* Sidebar CSS */
 .sidebar {
     height: 100%;
